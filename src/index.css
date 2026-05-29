@@ -1,1 +1,49 @@
 @import "tailwindcss";
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("public/fonts/Gilroy.ttf");
+}
+
+@theme {
+    --font-gilroy: "Gilroy";
+    --color-primary: #ffffff;
+    --color-primary-lite: #f5f5f7;
+    --color-light-gray: #D2d2d7;
+    --color-gray: #808080;
+    --color-dark-gray: #424245;
+    --color-secondary: #121212;
+    --color-success: #32936f;
+    --color-error: #f55f56;
+}
+
+.card1:hover ~ .card1-img img,
+.card1-img img:hover {
+    transform: scale(1.2);
+}
+
+.card2:hover ~ .card2-img img,
+.card2-img img:hover {
+    transform: scale(1.2);
+}
+
+.card3:hover ~ .card3-img img,
+.card3-img img:hover {
+    transform: scale(1.2);
+}
+
+.card4:hover ~ .card4-img img,
+.card4-img img:hover {
+    transform: scale(1.2);
+}
+
+.card5:hover ~ .card5-img img,
+.card5-img img:hover {
+    transform: scale(1.2);
+}
