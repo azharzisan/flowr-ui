@@ -1,3 +1,4 @@
+import Text3DFlip from "@/components/ui/text-3d-flip";
 import React from "react";
 
 const About = () => {
@@ -22,7 +23,13 @@ const About = () => {
             by sending flowers, plants and gifts the same or next day. Ordering
             flowers online has never been easier.
           </p>
-          <button className="border border-secondary px-5 py-3 text-sm font-semibold hover:bg-secondary hover:text-primary cursor-pointer">LEARN MORE</button>
+          <button className="border border-secondary px-5 py-3 text-sm font-semibold hover:bg-secondary hover:text-primary cursor-pointer">
+            <Text3DFlip
+              rotateDirection="top"
+            >
+              LEARN MORE
+            </Text3DFlip>
+          </button>
         </div>
       </div>
     </>
