@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <>
       <div className="w-full flex justify-center items-start font-gilroy text-secondary">
-        <div className="w-[50vw] h-screen flex flex-col justify-center items-start sticky top-0 border-x border-b p-14">
-          <div className="w-full flex flex-col justify-center items-start gap-5 pb-14 border-b">
-            <div>
+        <div className="w-[50vw] h-screen flex flex-col justify-center items-start sticky top-0 border-x border-b px-14 py-20">
+          <div className="w-full flex flex-col justify-center items-start gap-5 pb-3 border-b">
+            <div className="">
               <h4 className="font-extrabold text-5xl">Flowr</h4>
               <h4 className="font-extrabold text-5xl">LuxeBouquets</h4>
             </div>
@@ -17,11 +17,11 @@ const Hero = () => {
               Spread Joy with Our Online Flower Delivery Service
             </p>
           </div>
-          <div className="w-full pt-5 flex justify-center items-center">
+          <div className="w-full pt-3 flex justify-center items-center">
             <img
               src={heroFlower}
               alt=""
-              className="w-[250px] h-[250px] object-cover pr-5 border-r border-secondary"
+              className="w-[250px] h-[250px] object-cover pr-3 border-r border-secondary"
             />
             <div className="pl-5 h-[250px] flex justify-start items-end">
               <p className="text-md">
