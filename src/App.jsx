@@ -4,6 +4,10 @@ import Hero from "@/sections/Hero";
 import { useRef, useEffect, useState } from "react";
 import About from "./sections/About";
 import Choose from "./sections/Choose";
+import Contact from "./sections/Contact";
+import Service from "./sections/Sevice"
+import Footer from "./sections/Footer";
+import Cards from "./components/ui/Cards"
 
 function App() {
   const navRef = useRef(null);
@@ -27,6 +31,16 @@ function App() {
       <section>
         <Choose />
       </section>
+      <section>
+        <Contact />
+      </section>
+      <section>
+        <Service />
+      </section>
+      <section>
+        <Footer />
+      </section>
+      <Cards />
     </>
   );
 }
