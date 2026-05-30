@@ -22,14 +22,14 @@ const Choose = () => {
   return (
     <>
       <div className="font-gilroy w-full h-full flex justify-center lg:flex-row flex-col items-start border-x border-secondary border-b text-secondary">
-        <div className="w-full lg:w-[50vw] h-full p-8 lg:p-14 bg-primary sticky top-14 self-start border-b lg:border-none">
+        <div className="w-full lg:w-[50vw] h-full p-8 lg:p-14 bg-light-gray lg:bg-primary sticky top-14 self-start border-b lg:border-none">
           <h4 className="w-full h-full text-2xl md:text-3xl lg:text-5xl font-bold">Why choose us ?</h4>
         </div>
 
         <div className="w-full lg:w-[50vw] grid grid-cols-1 border-l border-secondary">
           {CHOOSE.map((i) => (
             <div key={i.title} className="w-full h-auto p-8 lg:p-14 border-b border-secondary">
-              <h4 className="text-xl font-bold pb-2">{i.title}</h4>
+              <h4 className="text-2xl font-bold pb-2">{i.title}</h4>
               <p className="text-xl">{i.desc}</p>
             </div>
           ))}
