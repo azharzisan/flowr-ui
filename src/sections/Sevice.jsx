@@ -1,3 +1,4 @@
+import Cards from "@/components/ui/Cards";
 import Text3DFlip from "@/components/ui/text-3d-flip";
 import React from "react";
 
@@ -5,26 +6,26 @@ const Sevice = () => {
   return (
     <>
       <div className="font-gilroy">
-        <div className=" w-full py-12 text-center bg-primary border-x border-b border-secondary sticky top-16">
-          <p className="text-4xl font-bold uppercase">Our service</p>
+        <div className=" w-full py-8 lg:py-12 text-center bg-primary border-x border-b border-secondary sticky top-14 self-start overflow-hidden z-20">
+          <p className="text-2xl lg:text-4xl font-bold uppercase bg-primary">Our service</p>
         </div>
-        <div className="w-full flex justify-center items-center border-x border-secondary">
-          <div className="w-[50vw] h-full border-r border-secondary">
+        <div className="w-full flex justify-center flex-col lg:flex-row items-center border-x border-secondary">
+          <div className="w-full lg:w-[50vw] h-full border-r border-secondary">
             <img
               src="/images/flw-sub.avif"
               alt=""
               className="w-full h-[90vh] object-cover"
             />
           </div>
-          <div className="w-[50vw] h-full flex justify-center items-center gap-4 flex-col p-14">
+          <div className="w-full lg:w-[50vw] h-full flex justify-center items-center gap-4 flex-col p-14">
             <h6 className="text-sm font-semibold">SERVICE</h6>
-            <h3 className="text-5xl font-bold">Flower Subscriptions</h3>
+            <h3 className="text-xl font-bold">Flower Subscriptions</h3>
             <p className="text-center">
               Experience the convenience and savings of regular flower
               deliveries with our flexible subscription service - up to 30% more
               profitable than one-time purchases.
             </p>
-            <button className="border border-secondary text-secondary uppercase px-5 py-3 hover:bg-secondary hover:text-primary">
+            <button className="inline-flex min-h-11 border border-secondary text-secondary uppercase px-5 py-3 hover:bg-secondary hover:text-primary">
               <Text3DFlip rotateDirection="top">Subscribe now</Text3DFlip>
             </button>
           </div>
@@ -49,7 +50,7 @@ const Sevice = () => {
             </button>
           </div>
         </section>
-        <div className="w-full bg-primary relative flex justify-center items-center flex-col gap-4 pt-26 pb-14 border border-secondary">
+        <div className="w-full bg-primary relative flex justify-center items-center flex-col gap-4 pt-26 pb-14 border border-secondary px-20">
           <img
             src="/images/google.png"
             alt=""
@@ -58,9 +59,12 @@ const Sevice = () => {
           <h6 className="w-full text-center text-md uppercase font-semibold">
             Reviews
           </h6>
-          <h3 className="w-full text-center text-5xl font-bold">
+          <h3 className="w-full text-center text-2xl font-bold">
             Our Clients say
           </h3>
+          <div className="w-full">
+            <Cards />
+          </div>
           <button className="px-5 py-3 border border-secondary text-secondary uppercase font-semibold hover:bg-secondary hover:text-primary">
             <Text3DFlip rotateDirection="top">Read reviews</Text3DFlip>
           </button>
