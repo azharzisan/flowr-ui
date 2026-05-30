@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <>
       <div className="w-full flex flex-col justify-center items-start lg:flex-row font-gilroy text-secondary">
-        <div className="w-full lg:w-1/2 min-h-[calc(100vh-58px)] lg:min-h-screen flex flex-col justify-center items-start lg:sticky lg:top-0 border-x border-b border-secondary px-5 pb-8 pt-10 sm:px-8 sm:pt-14 lg:px-14 lg:py-20">
-          <div className="w-full flex flex-col justify-center items-start gap-4 sm:gap-5 pb-5 border-b border-secondary">
+        <div className="w-full lg:w-1/2 min-h-[calc(100vh-58px)] lg:min-h-screen flex flex-col justify-center items-start lg:sticky lg:top-0 border-x border-b border-secondary px-5 pb-8 pt-24 sm:px-8 sm:pt-14 lg:px-14 lg:py-20">
+          <div className="w-full flex flex-col justify-center items-start gap-4 sm:gap-5 pb-5">
             <div className="">
               <h4 className="font-extrabold text-4xl sm:text-5xl lg:text-6xl">
                 Flowr
@@ -21,14 +21,15 @@ const Hero = () => {
               Spread Joy with Our Online Flower Delivery Service
             </p>
           </div>
-          <div className="w-full pt-5 flex flex-col justify-center items-stretch gap-5 lg:flex-row lg:gap-0">
+          <div className="w-full p-4 flex flex-col bg-light-gray justify-center items-stretch gap-5 lg:flex-row lg:gap-0">
             <img
               src={heroFlower}
               alt=""
-              className="w-full h-[220px] sm:h-[280px] lg:h-[250px] object-cover lg:w-1/2 lg:pr-5 lg:border-r border-secondary"
+              className="w-full h-[220px] sm:h-[280px] lg:h-[250px] object-cover lg:w-1/2 border"
             />
-            <div className="h-auto lg:h-[250px] w-full lg:w-1/2 flex justify-start items-end lg:pl-5">
-              <p className="text-base">
+            <div className="h-auto lg:h-[250px] w-full lg:w-1/2 flex justify-between flex-col items-center lg:pl-5">
+            <img src="/images/logo.png" alt="" className="w-25 h-25"/>
+              <p className="text-base font-bold text-center">
                 Experience the joy of giving with our modern floral studio.
                 Order online and send fresh flowers, plants and gifts today.
               </p>
