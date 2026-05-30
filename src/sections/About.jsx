@@ -5,12 +5,12 @@ const About = () => {
   return (
     <>
       <div className="font-gilroy w-full h-full flex justify-center flex-col lg:flex-row items-start border-x border-secondary border-b text-secondary">
-        <div className="w-full lg:w-[50vw] h-full p-8 bg-primary sticky top-14 z-20 self-start overflow-hidden border-b lg:border-none lg:p-14">
+        <div className="w-full lg:w-[50vw] h-full p-8 bg-light-gray sticky top-14 z-20 self-start overflow-hidden border-b lg:border-none lg:p-14">
           <h4 className="text-2xl md:text-3xl lg:text-5xl font-bold">About us</h4>
         </div>
         <div className="w-full lg:w-[50vw] h-full p-8 lg:p-14 flex flex-col justify-center items-start gap-4 lg:gap-3 lg:border-l border-secondary">
           <h5 className="text-md">OUR STORY</h5>
-          <h3 className="text-xl lg:text-3xl font-bold">Flowr LuxeBouquets</h3>
+          <h3 className="text-3xl lg:text-4xl font-bold">Flowr LuxeBouquets</h3>
           <p className="text-lg">
             We are a modern local floral studio, which specializes in the design
             and delivery of unique bouquets. We have the best florists who
