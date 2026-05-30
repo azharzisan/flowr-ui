@@ -4,11 +4,16 @@ import React from "react";
 import { useState } from "react";
 
 const Navbar = ({ ref }) => {
-  const [navToggle, setNavToggle] = useState(true);
+  const [navToggle, setNavToggle] = useState(false);
+  const [cartToggle, setCartToggle] = useState(false);
   const NAVITEMS = ["Sign In", "Shop", "Service", "Contact", "About Us"];
 
   const handleMenuToggle = () => {
     setNavToggle((prev) => !prev);
+  };
+
+  const handleCartToggle = () => {
+    setCartToggle((prev) => !prev);
   };
   return (
     <>
@@ -28,8 +33,13 @@ const Navbar = ({ ref }) => {
           <button className="w-full py-6 border-x border-secondary flex justify-center items-center">
             <Text3DFlip rotateDirection="top">Sign in</Text3DFlip>
           </button>
-          <button className="w-full py-6 flex justify-center items-center">
+          <button
+            onClick={handleCartToggle}
+            className="w-full relative py-6 flex justify-center items-center"
+          >
             <Text3DFlip rotateDirection="top">Cart</Text3DFlip>
+            <div className="w-3 h-3 bg-error animate-ping absolute bottom-0 left-0"></div>
+            <div className="w-3 h-3 bg-error absolute bottom-0 left-0"></div>
           </button>
         </div>
         <div className="w-full flex justify-between items-center border border-secondary lg:hidden fixed top-0 bg-primary z-1000">
@@ -39,8 +49,13 @@ const Navbar = ({ ref }) => {
           >
             <DynamicIcon name={"Menu"} />
           </div>
-          <div className="p-4 border-l border-secondary">
+          <div
+            onClick={handleCartToggle}
+            className="p-4 border-x relative border-secondary"
+          >
             <DynamicIcon name={"ShoppingBag"} />
+            <div className="w-3 h-3 bg-error rounded-full animate-ping absolute top-3 right-3"></div>
+            <div className="w-3 h-3 bg-error rounded-full absolute top-3 right-3"></div>
           </div>
         </div>
         <div
@@ -60,6 +75,50 @@ const Navbar = ({ ref }) => {
               <Text3DFlip rotateDirection="top">{i}</Text3DFlip>
             </div>
           ))}
+        </div>
+        <div
+          className={`w-full flex justify-center items-center flex-col-reverse lg:flex-row absolute top-0 right-0 z-2000 opacity-0 ${cartToggle ? "visible opacity-100" : "invisible opacity-0"}`}
+        >
+          <div className="w-full lg:w-[50vw] h-screen backdrop-blur-xs"></div>
+          <div className="w-full lg:w-[50vw] h-full lg:h-screen bg-primary">
+            <div className="w-full flex justify-between items-center p-5 border">
+              <h4>Shopping Cart</h4>
+              <button onClick={handleCartToggle}>
+                <DynamicIcon name={"X"} />
+              </button>
+            </div>
+            <div className="w-full flex justify-between items-center p-5 border-x border-b">
+              <div className="flex justify-start items-center gap-4">
+                <img
+                  src="/images/flw6.jpeg"
+                  alt=""
+                  className="w-30 h-30 object-cover border-gray border-2 "
+                />
+                <div>
+                  <h4 className="text-2xl font-bold">Rosey</h4>
+                  <p className="font-medium text-md">Quantity (1)</p>
+                  <p className="text-xl">$80</p>
+                </div>
+              </div>
+              <button className="cursor-pointer">
+                <DynamicIcon name={"Trash"} size={20} color={"#f55f56"} />
+              </button>
+            </div>
+            <div className="w-full flex justify-between items-center p-5 border-x border-b">
+              <h4>Subtotal</h4>
+              <h4 className="text-xl font-bold">$80</h4>
+            </div>
+            <div className="border-x border-b px-5 pt-5 pb-20">
+              <p className="text-gray">Gift Message</p>
+            </div>
+            <h4 className="w-full text-center border-x border-b font-medium px-14 py-5">
+              Shipping & taxes calculated at checkout Free standard shipping
+              within Flowr
+            </h4>
+            <button className="w-full h-auto text-primary bg-secondary text-2xl uppercase font-medium py-4 flex justify-center items-center">
+              <Text3DFlip rotateDirection="top">Checkout</Text3DFlip>
+            </button>
+          </div>
         </div>
       </div>
     </>
