@@ -22,7 +22,7 @@ const Contact = () => {
                 placeholder="+353 89 XXXXXXX"
                 className="w-full max-w-sm border border-secondary px-5 py-3 text-center sm:text-left"
               />
-              <button className="w-full max-w-sm sm:w-auto bg-secondary text-primary border px-6 py-3">
+              <button className="w-full max-w-sm sm:w-auto bg-secondary text-primary border px-6 py-3 flex justify-center items-center">
                 <Text3DFlip rotateDirection="top">BOOK A CALL</Text3DFlip>
               </button>
             </div>
