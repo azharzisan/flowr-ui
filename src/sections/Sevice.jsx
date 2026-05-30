@@ -6,28 +6,32 @@ const Sevice = () => {
   return (
     <>
       <div className="font-gilroy">
-        <div className=" w-full py-8 lg:py-12 text-center bg-primary border-x border-b border-secondary sticky top-14 self-start overflow-hidden z-20">
-          <p className="text-2xl lg:text-4xl font-bold uppercase bg-primary">Our service</p>
-        </div>
-        <div className="w-full flex justify-center flex-col lg:flex-row items-center border-x border-secondary">
-          <div className="w-full lg:w-[50vw] h-full border-r border-secondary">
-            <img
-              src="/images/flw-sub.avif"
-              alt=""
-              className="w-full h-[90vh] object-cover"
-            />
-          </div>
-          <div className="w-full lg:w-[50vw] h-full flex justify-center items-center gap-4 flex-col p-14">
-            <h6 className="text-sm font-semibold">SERVICE</h6>
-            <h3 className="text-xl font-bold">Flower Subscriptions</h3>
-            <p className="text-center">
-              Experience the convenience and savings of regular flower
-              deliveries with our flexible subscription service - up to 30% more
-              profitable than one-time purchases.
+        <div>
+          <div className=" w-full py-8 lg:py-12 text-center bg-light-gray lg:bg-primary border-x border-b border-secondary sticky top-14 self-start overflow-hidden z-20">
+            <p className="text-2xl lg:text-4xl font-bold uppercase">
+              Our service
             </p>
-            <button className="inline-flex min-h-11 border border-secondary text-secondary uppercase px-5 py-3 hover:bg-secondary hover:text-primary">
-              <Text3DFlip rotateDirection="top">Subscribe now</Text3DFlip>
-            </button>
+          </div>
+          <div className="w-full flex justify-center flex-col lg:flex-row items-center border-x border-secondary">
+            <div className="w-full lg:w-[50vw] h-full border-r border-secondary">
+              <img
+                src="/images/flw-sub.avif"
+                alt=""
+                className="w-full h-[90vh] object-cover"
+              />
+            </div>
+            <div className="w-full lg:w-[50vw] h-full flex justify-center items-center gap-4 flex-col p-14">
+              <h6 className="text-sm font-semibold">SERVICE</h6>
+              <h3 className="text-xl font-bold">Flower Subscriptions</h3>
+              <p className="text-center">
+                Experience the convenience and savings of regular flower
+                deliveries with our flexible subscription service - up to 30%
+                more profitable than one-time purchases.
+              </p>
+              <button className="inline-flex min-h-11 border border-secondary text-secondary uppercase px-5 py-3 hover:bg-secondary hover:text-primary">
+                <Text3DFlip rotateDirection="top">Subscribe now</Text3DFlip>
+              </button>
+            </div>
           </div>
         </div>
         <section
