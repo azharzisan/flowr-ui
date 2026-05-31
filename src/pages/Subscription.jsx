@@ -1,6 +1,7 @@
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import Text3DFlip from "@/components/ui/text-3d-flip";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Subscription = () => {
   const PURPOSE = [
@@ -76,6 +77,7 @@ const Subscription = () => {
   ];
 
   const [quantityNm, setQuantityNm] = useState(0);
+  const navigate = useNavigate()
   return (
     <>
       <section>
@@ -210,7 +212,7 @@ const Subscription = () => {
                 </button>
               </div>
             </div>
-              <button className="w-full cursor-pointer text-xl py-3 bg-secondary text-primary flex justify-center items-center uppercase">
+              <button onClick={() => navigate("/checkout")} className="w-full cursor-pointer text-xl py-3 bg-secondary text-primary flex justify-center items-center uppercase">
                 <Text3DFlip rotateDirection="top">checkout</Text3DFlip>
               </button>
           </div>
