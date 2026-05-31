@@ -16,8 +16,14 @@
     src: url("/fonts/Gilroy.ttf");
 }
 
+@font-face {
+    font-family: "Dancing";
+    src: url("/fonts/Dancing.ttf");
+}
+
 @theme {
     --font-gilroy: "Gilroy";
+    --font-dancing: "Dancing";
     --color-primary: #ffffff;
     --color-primary-lite: #f5f5f7;
     --color-light-gray: #D2d2d7;
