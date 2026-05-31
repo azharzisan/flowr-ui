@@ -1,8 +1,10 @@
 import React from "react";
 import heroFlower from "/images/hero-flower.jpg";
 import DynamicIcon from "../components/ui/DynamicIcon";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div className="w-full flex flex-col justify-center items-start lg:flex-row font-gilroy text-secondary">
@@ -28,7 +30,7 @@ const Hero = () => {
               className="w-full h-[220px] sm:h-[280px] lg:h-[250px] object-cover lg:w-1/2 border"
             />
             <div className="h-auto lg:h-[250px] w-full lg:w-1/2 flex justify-between flex-col items-center lg:pl-5">
-            <img src="/images/logo.png" alt="" className="w-25 h-25"/>
+              <img src="/images/logo.png" alt="" className="w-25 h-25" />
               <p className="text-base font-bold text-center">
                 Experience the joy of giving with our modern floral studio.
                 Order online and send fresh flowers, plants and gifts today.
@@ -37,7 +39,10 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 border-x lg:border-l-0 border-secondary">
-          <div className="card1 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center">
+          <div
+            onClick={() => navigate("/catagory")}
+            className="card1 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center"
+          >
             <div></div>
             <h5 className="text-2xl sm:text-3xl font-bold">Fresh Flowers</h5>
             <div className="flex justify-center items-center gap-1 group-hover:underline">
@@ -52,7 +57,10 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary overflow-hidden card1-img">
+          <div
+            onClick={() => navigate("/catagory")}
+            className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary overflow-hidden card1-img"
+          >
             <img
               src="/images/fl4.jpg"
               alt=""
@@ -60,14 +68,20 @@ const Hero = () => {
             />
           </div>
 
-          <div className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary card2-img overflow-hidden">
+          <div
+            onClick={() => navigate("/catagory")}
+            className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary card2-img overflow-hidden"
+          >
             <img
               src="/images/fl3.webp"
               alt=""
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="card2 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary flex flex-col justify-between items-center p-5 text-center">
+          <div
+            onClick={() => navigate("/catagory")}
+            className="card2 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary flex flex-col justify-between items-center p-5 text-center"
+          >
             <div></div>
             <h5 className="text-2xl sm:text-3xl font-bold">Dried Flowers</h5>
             <div className="flex justify-center items-center gap-1 group-hover:underline">
@@ -83,7 +97,10 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="card3 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center">
+          <div
+            onClick={() => navigate("/catagory")}
+            className="card3 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center"
+          >
             <div></div>
             <h5 className="text-2xl sm:text-3xl font-bold">Live Plants</h5>
             <div className="flex justify-center items-center gap-1 group-hover:underline">
@@ -98,7 +115,10 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary card3-img overflow-hidden">
+          <div
+            onClick={() => navigate("/catagory")}
+            className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary card3-img overflow-hidden"
+          >
             <img
               src="/images/fl2.webp"
               alt=""
@@ -106,14 +126,20 @@ const Hero = () => {
             />
           </div>
 
-          <div className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary card4-img overflow-hidden">
+          <div
+            onClick={() => navigate("/catagory")}
+            className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary card4-img overflow-hidden"
+          >
             <img
               src="/images/fl5.avif"
               alt=""
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="card4 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary flex flex-col justify-between items-center p-5 text-center">
+          <div
+            onClick={() => navigate("/catagory")}
+            className="card4 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary flex flex-col justify-between items-center p-5 text-center"
+          >
             <div></div>
             <h5 className="text-2xl sm:text-3xl font-bold">Aroma Candles</h5>
             <div className="flex justify-center items-center gap-1 group-hover:underline">
@@ -129,7 +155,10 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="card5 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center">
+          <div
+            onClick={() => navigate("/catagory")}
+            className="card5 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center"
+          >
             <div></div>
             <h5 className="text-2xl sm:text-3xl font-bold">Fresheners</h5>
             <div className="flex justify-center items-center gap-1 group-hover:underline">
@@ -144,7 +173,10 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary card5-img overflow-hidden">
+          <div
+            onClick={() => navigate("/catagory")}
+            className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary card5-img overflow-hidden"
+          >
             <img
               src="/images/gl2.jpg"
               alt=""
