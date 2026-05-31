@@ -2,6 +2,7 @@ import Checkbox from "@/components/ui/Checkbox";
 import DynamicIcon from "@/components/ui/DynamicIcon";
 import Text3DFlip from "@/components/ui/text-3d-flip";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ProductPage = () => {
   const [quantityNm, setQuantityNm] = useState(0);
@@ -10,6 +11,7 @@ const ProductPage = () => {
     "/images/vase2.jpg",
     "/images/vase3.webp",
   ];
+  const navigate = useNavigate()
   return (
     <>
       <section className="w-full h-full border-b border-x font-gilroy flex flex-col lg:flex-row justify-center items-start">
@@ -79,7 +81,7 @@ const ProductPage = () => {
             <Checkbox />
             <p>Subscribe now, and save 25% on this order. </p>
           </div>
-          <button className="w-full cursor-pointer text-xl py-3 bg-secondary text-primary flex justify-center items-center uppercase">
+          <button onClick={() => navigate("/checkout")} className="w-full cursor-pointer text-xl py-3 bg-secondary text-primary flex justify-center items-center uppercase">
             <Text3DFlip rotateDirection="top">Add to basket</Text3DFlip>
           </button>
         </div>
