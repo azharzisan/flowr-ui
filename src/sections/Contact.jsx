@@ -7,14 +7,14 @@ const Contact = () => {
     <>
       <div className="w-full flex flex-col justify-center items-stretch lg:flex-row text-secondary font-gilroy border-x border-b border-secondary">
         <div className="w-full lg:w-1/2 flex flex-col">
-          <div className="w-full min-h-[320px] lg:min-h-[50vh] border-b border-secondary px-5 py-10 sm:px-8 lg:p-14 flex justify-center items-center flex-col gap-4">
-            <h4 className="w-full text-2xl sm:text-3xl font-bold text-center">
-              To Contact Us
+          <div className="w-full min-h-[320px] lg:min-h-[50vh] border-b border-secondary px-5 py-10 sm:px-8 lg:p-14 flex justify-start items-center flex-col gap-4">
+            <h4 className="w-full text-2xl sm:text-4xl font-bold">
+              Lets Talk
             </h4>
-            <p className="w-full text-base sm:text-lg text-center">
+            <p className="w-full text-base sm:text-lg ">
               We will call you back
             </p>
-            <div className="w-full flex justify-start items-center gap-4 flex-col">
+            <div className="w-full flex justify-start items-start gap-4 flex-col">
               <input
                 type="text"
                 name=""
@@ -23,7 +23,7 @@ const Contact = () => {
                 className="w-full max-w-sm border border-secondary px-5 py-3 text-center sm:text-left"
               />
               <button className="w-full max-w-sm sm:w-auto bg-secondary text-primary border px-6 py-3 flex justify-center items-center">
-                <Text3DFlip rotateDirection="top">BOOK A CALL</Text3DFlip>
+                <Text3DFlip rotateDirection="top">REACH US</Text3DFlip>
               </button>
             </div>
           </div>
@@ -32,7 +32,7 @@ const Contact = () => {
               <h4 className="w-full h-auto py-4 text-center text-lg sm:text-xl font-semibold border-b border-secondary">
                 Phone
               </h4>
-              <div className="w-full flex-1 min-h-[200px] sm:min-h-[240px] flex justify-center items-center flex-col gap-4 px-5 text-xl sm:text-2xl text-center">
+              <div className="w-full flex-1 min-h-[200px] sm:min-h-[240px] flex justify-center items-center flex-col gap-4 px-5 text-sm sm:text-md text-center">
                 <p>+353 87 4532856</p>
                 <p>+353 98 4204384</p>
               </div>
@@ -42,10 +42,10 @@ const Contact = () => {
                 Address
               </h4>
               <div className="w-full flex-1 min-h-[200px] sm:min-h-[240px] flex justify-center items-center flex-col gap-4 px-5 text-center">
-                <p className="uppercase text-base sm:text-lg">
+                <p className="uppercase text-base sm:text-md">
                   opening hours: 8 to 11 p.m.
                 </p>
-                <p className="text-xl sm:text-2xl font-bold">
+                <p className="text-sm sm:text-lg font-bold">
                   15/4 Khreshchatyk Street, Kyiv
                 </p>
               </div>
