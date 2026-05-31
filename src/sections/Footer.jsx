@@ -1,8 +1,10 @@
 import Text3DFlip from "@/components/ui/text-3d-flip";
 import React from "react";
 import DynamicIconTabler from "@/components/ui/DynamicIconTabler";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate()
     const SHOP = [
       "All Products",
       "Fresh Flowers",
@@ -99,7 +101,7 @@ const Footer = () => {
           <div className="flex flex-col gap-1 cursor-pointer">
             <h3 className="text-xl font-semibold text-dark-gray">Shop</h3>
             {SHOP.map((i) => (
-              <div className="font-bold text-sm" key={i}>
+              <div onClick={() => navigate("/catagory")} className="font-bold text-sm" key={i}>
                 <Text3DFlip rotateDirection="top">{i}</Text3DFlip>
               </div>
             ))}
@@ -107,7 +109,7 @@ const Footer = () => {
           <div className="flex flex-col gap-1 cursor-pointer">
             <h3 className="text-xl font-semibold text-dark-gray">Services</h3>
             {SERVICES.map((i) => (
-              <div className="font-bold text-sm" key={i}>
+              <div onClick={() => navigate("/subscription")} className="font-bold text-sm" key={i}>
                 <Text3DFlip rotateDirection="top">{i}</Text3DFlip>
               </div>
             ))}
@@ -118,7 +120,7 @@ const Footer = () => {
           <div className="flex flex-col gap-1 cursor-pointer">
             <h3 className="text-xl font-semibold text-dark-gray">About Us</h3>
             {ABOUT.map((i) => (
-              <div className="font-bold text-sm" key={i}>
+              <div onClick={() => navigate("/our-story")} className="font-bold text-sm" key={i}>
                 <Text3DFlip rotateDirection="top">{i}</Text3DFlip>
               </div>
             ))}
