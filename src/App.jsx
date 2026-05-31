@@ -9,19 +9,19 @@ function App() {
 
   return (
     <>
-      <section>
+      <section id="hero">
         <Hero />
       </section>
-      <section>
+      <section id="about">
         <About />
       </section>
-      <section>
+      <section id="choose">
         <Choose />
       </section>
-      <section>
+      <section id="contact">
         <Contact />
       </section>
-      <section>
+      <section id="service">
         <Sevice />
       </section>
     </>
