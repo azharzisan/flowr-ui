@@ -30,7 +30,7 @@ const Choose = () => {
           {CHOOSE.map((i) => (
             <div key={i.title} className="w-full h-auto p-8 lg:p-14 border-b border-secondary">
               <h4 className="text-2xl font-bold pb-2">{i.title}</h4>
-              <p className="text-xl">{i.desc}</p>
+              <p className="text-sm">{i.desc}</p>
             </div>
           ))}
         </div>
