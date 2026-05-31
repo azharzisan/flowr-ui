@@ -1,8 +1,10 @@
 import Cards from "@/components/ui/Cards";
 import Text3DFlip from "@/components/ui/text-3d-flip";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Sevice = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div className="font-gilroy">
@@ -22,13 +24,13 @@ const Sevice = () => {
             </div>
             <div className="w-full lg:w-[50vw] h-full flex justify-center items-center gap-4 flex-col p-14">
               <h6 className="text-sm font-semibold">SERVICE</h6>
-              <h3 className="text-xl font-bold">Flower Subscriptions</h3>
+              <h3 className="text-xl md:text-3xl font-bold">Flower Subscriptions</h3>
               <p className="text-center">
                 Experience the convenience and savings of regular flower
                 deliveries with our flexible subscription service - up to 30%
                 more profitable than one-time purchases.
               </p>
-              <button className="inline-flex min-h-11 border border-secondary text-secondary uppercase px-5 py-3 hover:bg-secondary hover:text-primary">
+              <button onClick={() => navigate("/subscription")} className="inline-flex min-h-11 border border-secondary text-secondary uppercase px-5 py-3 hover:bg-secondary hover:text-primary">
                 <Text3DFlip rotateDirection="top">Subscribe now</Text3DFlip>
               </button>
             </div>
