@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Catagory = () => {
   const CATAGORY = [
@@ -13,6 +14,7 @@ const Catagory = () => {
     { name: "Tulip", price: "70", image: "/images/flw8.jpeg" },
     { name: "Orchid", price: "85", image: "/images/flw9.jpeg" },
   ];
+  const navigate = useNavigate()
   return (
     <>
       <section className="w-full h-full border-b border-x font-gilroy flex flex-col lg:flex-row justify-center items-start">
@@ -24,13 +26,14 @@ const Catagory = () => {
               className="w-full h-full object-cover"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-secondary/60 flex justify-center items-center">
-              <h4 className="text-6xl font-bold text-primary">Fresh Flowers</h4>
+              <h4 className="text-5xl sm:text-6xl font-bold text-primary">Fresh Flowers</h4>
             </div>
           </div>
         </div>
         <div className="w-full lg:w-1/2 h-full grid grid-cols-1 md:grid-cols-2 divide-x divide-y divide-solid divide-secondary">
           {CATAGORY.map((i) => (
             <div
+              onClick={() => navigate("/product")}
               key={i.name}
               className="w-full h-[50vh] relative cursor-pointer overflow-hidden"
             >
