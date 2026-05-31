@@ -2,11 +2,12 @@ import DynamicIcon from "@/components/ui/DynamicIcon";
 import Text3DFlip from "@/components/ui/text-3d-flip";
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = ({ ref }) => {
+  const navigate = useNavigate();
   const [navToggle, setNavToggle] = useState(false);
   const [cartToggle, setCartToggle] = useState(false);
-  const NAVITEMS = ["Sign In", "Shop", "Service", "Contact", "About Us"];
 
   const handleMenuToggle = () => {
     setNavToggle((prev) => !prev);
@@ -15,6 +16,21 @@ const Navbar = ({ ref }) => {
   const handleCartToggle = () => {
     setCartToggle((prev) => !prev);
   };
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" }); // Smooth scrolling animation
+    }
+  };
+
+  const NAVITEMS = [
+    { name: "Sign In", navigate: () => navigate("/account") },
+    { name: "Shop", navigate: () => navigate("/catagory") },
+    { name: "Service", navigate: () => scrollToSection("service") },
+    { name: "Contact", navigate: () => scrollToSection("contact") },
+    { name: "About Us", navigate: () => navigate("/our-story") },
+  ];
   return (
     <>
       <div
@@ -22,15 +38,24 @@ const Navbar = ({ ref }) => {
         className="w-full bg-primary font-gilroy font-bold flex justify-between items-center border border-secondary fixed z-100"
       >
         <div className="w-[25vw] lg:flex justify-center items-center hidden">
-          <button className="w-full py-6 flex justify-center items-center">
+          <button
+            onClick={() => navigate("/catagory")}
+            className="w-full py-6 flex justify-center items-center"
+          >
             <Text3DFlip rotateDirection="top">Shop</Text3DFlip>
           </button>
-          <button className="w-full py-6 border-x border-secondary flex justify-center items-center">
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="w-full py-6 border-x border-secondary flex justify-center items-center"
+          >
             <Text3DFlip rotateDirection="top">Contact</Text3DFlip>
           </button>
         </div>
         <div className="w-[25vw] lg:flex justify-center items-center hidden">
-          <button className="w-full py-6 border-x border-secondary flex justify-center items-center">
+          <button
+            onClick={() => navigate("/account")}
+            className="w-full py-6 border-x border-secondary flex justify-center items-center"
+          >
             <Text3DFlip rotateDirection="top">Sign in</Text3DFlip>
           </button>
           <button
@@ -69,10 +94,15 @@ const Navbar = ({ ref }) => {
           </div>
           {NAVITEMS.map((i) => (
             <div
-              key={i}
+              key={i.name}
               className="p-5 bg-primary text-xl font-bold border-x border-b"
             >
-              <Text3DFlip rotateDirection="top">{i}</Text3DFlip>
+              <Text3DFlip
+                rotateDirection="top"
+                onClick={() => i.navigate()}
+              >
+                {i.name}
+              </Text3DFlip>
             </div>
           ))}
         </div>
@@ -115,7 +145,7 @@ const Navbar = ({ ref }) => {
               Shipping & taxes calculated at checkout Free standard shipping
               within Flowr
             </h4>
-            <button className="w-full h-auto text-primary bg-secondary text-2xl uppercase font-medium py-4 flex justify-center items-center">
+            <button onClick={() => navigate("/checkout")} className="w-full h-auto text-primary bg-secondary text-2xl uppercase font-medium py-4 flex justify-center items-center">
               <Text3DFlip rotateDirection="top">Checkout</Text3DFlip>
             </button>
           </div>
