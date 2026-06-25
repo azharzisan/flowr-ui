@@ -3,6 +3,7 @@ import Navbar from "@/sections/Navbar";
 import { Outlet } from "react-router-dom";
 import React from "react";
 import { useRef, useEffect, useState } from "react";
+import { ScrollRestoration } from "react-router-dom";
 
 const Default = () => {
   const navRef = useRef(null);
@@ -19,6 +20,7 @@ const Default = () => {
         <Navbar ref={navRef} />
         <section style={{ paddingTop: navHeight }}>
           <Outlet />
+          <ScrollRestoration />
         </section>
         <Footer />
       </div>
