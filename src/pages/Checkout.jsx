@@ -17,7 +17,7 @@ const Checkout = () => {
   return (
     <>
       <section className="border-x border-b font-gilroy pt-13 lg:pt-0">
-        <div className="w-full flex justify-center items-center flex-col-reverse lg:flex-row">
+        <div className="w-full flex justify-center items-start flex-col-reverse lg:flex-row">
           <div className="w-full h-full p-6 lg:p-10 flex flex-col gap-3 border-b lg:border-none">
             <div className="w-full flex gap-2 text-gray">
               {STEPS.map((s, i) => (
@@ -42,7 +42,7 @@ const Checkout = () => {
             </div>
           </div>
           <div
-            className={`w-full h-full p-6 lg:p-10 bg-light-gray/30 border-l border-b lg:border-b-0`}
+            className={`w-full md:h-180 p-6 lg:p-10 bg-light-gray/30 border-l border-b lg:border-b-0`}
           >
             <div className={`w-full flex justify-between items-center`}>
               <div className="flex justify-center items-center gap-2">

@@ -37,7 +37,7 @@ const Navbar = ({ ref }) => {
         ref={ref}
         className="w-full bg-primary font-gilroy font-bold flex justify-between items-center border border-secondary fixed z-100"
       >
-        <div className="w-[25vw] lg:flex justify-center items-center hidden">
+        <div className="w-1/4 lg:flex justify-center items-center hidden">
           <button
             onClick={() => navigate("/catagory")}
             className="w-full py-6 flex justify-center items-center"
@@ -51,7 +51,7 @@ const Navbar = ({ ref }) => {
             <Text3DFlip rotateDirection="top">Contact</Text3DFlip>
           </button>
         </div>
-        <div className="w-[25vw] lg:flex justify-center items-center hidden">
+        <div className="w-1/4 lg:flex justify-center items-center hidden">
           <button
             onClick={() => navigate("/account")}
             className="w-full py-6 border-x border-secondary flex justify-center items-center"

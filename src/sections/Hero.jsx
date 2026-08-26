@@ -41,7 +41,7 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 border-x lg:border-l-0 border-secondary">
           <div
             onClick={() => navigate("/catagory")}
-            className="card1 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center"
+            className="card1 group bg-primary min-h-[220px] sm:min-h-[260px] lg:h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center"
           >
             <div></div>
             <h5 className="text-2xl sm:text-3xl font-bold">Fresh Flowers</h5>
@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
           <div
             onClick={() => navigate("/catagory")}
-            className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary overflow-hidden card1-img"
+            className="min-h-[220px] sm:min-h-[260px] lg:h-[50vh] border-b border-secondary overflow-hidden card1-img"
           >
             <img
               src="/images/fl4.jpg"
@@ -70,7 +70,7 @@ const Hero = () => {
 
           <div
             onClick={() => navigate("/catagory")}
-            className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary card2-img overflow-hidden"
+            className="min-h-[220px] sm:min-h-[260px] lg:h-[50vh] border-b sm:border-r border-secondary card2-img overflow-hidden"
           >
             <img
               src="/images/fl3.webp"
@@ -80,7 +80,7 @@ const Hero = () => {
           </div>
           <div
             onClick={() => navigate("/catagory")}
-            className="card2 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary flex flex-col justify-between items-center p-5 text-center"
+            className="card2 group bg-primary min-h-[220px] sm:min-h-[260px] lg:h-[50vh] border-b border-secondary flex flex-col justify-between items-center p-5 text-center"
           >
             <div></div>
             <h5 className="text-2xl sm:text-3xl font-bold">Dried Flowers</h5>
@@ -99,7 +99,7 @@ const Hero = () => {
 
           <div
             onClick={() => navigate("/catagory")}
-            className="card3 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center"
+            className="card3 group bg-primary min-h-[220px] sm:min-h-[260px] lg:h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center"
           >
             <div></div>
             <h5 className="text-2xl sm:text-3xl font-bold">Live Plants</h5>
@@ -117,7 +117,7 @@ const Hero = () => {
           </div>
           <div
             onClick={() => navigate("/catagory")}
-            className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary card3-img overflow-hidden"
+            className="min-h-[220px] sm:min-h-[260px] lg:h-[50vh] border-b border-secondary card3-img overflow-hidden"
           >
             <img
               src="/images/fl2.webp"
@@ -128,7 +128,7 @@ const Hero = () => {
 
           <div
             onClick={() => navigate("/catagory")}
-            className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary card4-img overflow-hidden"
+            className="min-h-[220px] sm:min-h-[260px] lg:h-[50vh] border-b sm:border-r border-secondary card4-img overflow-hidden"
           >
             <img
               src="/images/fl5.avif"
@@ -138,7 +138,7 @@ const Hero = () => {
           </div>
           <div
             onClick={() => navigate("/catagory")}
-            className="card4 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary flex flex-col justify-between items-center p-5 text-center"
+            className="card4 group bg-primary min-h-[220px] sm:min-h-[260px] lg:h-[50vh] border-b border-secondary flex flex-col justify-between items-center p-5 text-center"
           >
             <div></div>
             <h5 className="text-2xl sm:text-3xl font-bold">Aroma Candles</h5>
@@ -157,7 +157,7 @@ const Hero = () => {
 
           <div
             onClick={() => navigate("/catagory")}
-            className="card5 group bg-primary min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center"
+            className="card5 group bg-primary min-h-[220px] sm:min-h-[260px] lg:h-[50vh] border-b sm:border-r border-secondary flex flex-col justify-between items-center p-5 text-center"
           >
             <div></div>
             <h5 className="text-2xl sm:text-3xl font-bold">Fresheners</h5>
@@ -175,7 +175,7 @@ const Hero = () => {
           </div>
           <div
             onClick={() => navigate("/catagory")}
-            className="min-h-[220px] sm:min-h-[260px] lg:min-h-[50vh] border-b border-secondary card5-img overflow-hidden"
+            className="min-h-[220px] sm:min-h-[260px] lg:h-[50vh] border-b border-secondary card5-img overflow-hidden"
           >
             <img
               src="/images/gl2.jpg"
